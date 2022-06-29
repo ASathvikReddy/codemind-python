@@ -1,0 +1,5 @@
+n=input()
+n=n.lower()
+n=n.replace(" ","")
+s=set(n)
+print(len(s))
