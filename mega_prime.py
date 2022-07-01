@@ -17,6 +17,6 @@ if prime(n):
     if c==d:
         print("Mega Prime")
     else:
-        print('Not Mega Prime')
+        print("Not Mega Prime")
 else:
     print("Not Mega Prime")
