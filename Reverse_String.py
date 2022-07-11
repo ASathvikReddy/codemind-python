@@ -1,3 +1,2 @@
-a=input()
-print(a[::-1])
-    
+n=list(map(str,input().split()))
+print(*n[::-1])
