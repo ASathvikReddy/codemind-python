@@ -1,5 +1,4 @@
-n=input()
-n=n.lower()
+n=input().lower()
 n=n.replace(" ","")
 c=0
 for i in n:
