@@ -1,3 +1,2 @@
-n=input()
-n=n.split(' ')
+n=input().split(' ')
 print(*sorted(n))
