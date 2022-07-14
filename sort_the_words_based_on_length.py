@@ -1,9 +1,6 @@
 n=list(map(str,input().split()))
-l=len(n)
-for i in range(0,l):
-    for j in range(0,l):
+for i in range(len(n)):
+    for j in range(len(n)):
         if i!=j and len(n[i])<len(n[j]):
-            t=n[i]
-            n[i]=n[j]
-            n[j]=t
+            n[i],n[j]=n[j],n[i]
 print(*n)
