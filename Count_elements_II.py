@@ -1,13 +1,13 @@
 n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
-a,b = set(a),set(b)
-a,b = list(a),list(b)
-c = []
-for i in range(len(a)):
-    if a[i] not in b:
-        c.append(a[i])
-for i in range(len(b)):
-    if b[i] not in a:
-        c.append(b[i])
-print(len(c))
+c=d=0
+a=set(a)
+b=set(b)
+for i in a:
+    if i not in b:
+        c+=1
+for i in b:
+    if i not in a:
+        d+=1
+print(c+d)
