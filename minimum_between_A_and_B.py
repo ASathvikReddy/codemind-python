@@ -1,12 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
 x,y=map(int,input().split())
-m=999999
+b=0
+c=[]
 for i in range(n):
-    if a[i]<=y and a[i]>=x:
-        if m>a[i]:
-            m=a[i]
-if m==999999:
+    if a[i]>=x and a[i]<=y:
+        b+=1
+        c.append(a[i])
+if b==0:
     print("-1")
 else:
-    print(m)
+    print(min(c))
