@@ -1,7 +1,6 @@
 n=input().lower()
 n=n.split(' ')
 s=n[0]
-c=0
 x=''
 for i in s:
     c=0
