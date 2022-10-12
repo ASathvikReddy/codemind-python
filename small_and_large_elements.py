@@ -1,7 +1,5 @@
-n=input()
-m=n.split(' ')
-if len(m)==2:
-    print(min(m[0]),max(m[1]))
+n=input().split()
+if len(n)==2:
+    print(min(n[0]),max(n[1]))
 else:
-    print(min(m[0]),max(m[len(m)-2]))
-    
+    print(min(n[0]),max(n[len(n)-2]))
