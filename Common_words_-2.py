@@ -1,14 +1,7 @@
-a=input()
-b=input()
-a=a.split(" ")
-b=b.split(" ")
+s1=input().split()
+s2=input().split()
 c=0
-for i in a:
-    s=0
-    x=0
-    if i in b:
-       s=a.count(i)
-       x=b.count(i)
-       if s==1 and x==1:
-           c+=1
+for i in s1:
+    if i in s2 and s2.count(i)==1 and s1.count(i)==1:
+        c+=1
 print(c)
